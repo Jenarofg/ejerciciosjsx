@@ -1,19 +1,21 @@
 import './App.css';
 import Coches from './components/Coches';
-import Bienvenida from './components/Bienvenida';
+import Saludo from './components/Saludo';
 import Despedida from './components/Despedida';
 
 function App() {
 
   const estado=true;
-  const nombre="Jenaro Fernández";
+  const nombre="Jenaro Fernández García";
 
   return (
     <div className="App">
-      <div className='ejercicio1'>
-        {estado ? <Bienvenida nombre={nombre} /> : <Despedida nombre={nombre} />}
+      <h3>Ejercicio 1</h3>
+      <div className='Ej1'>
+        {estado ? <Saludo nombre={nombre} /> : <Despedida nombre={nombre} />}
       </div>
-      <div className='ejercicio2'>
+      <div className='styledTextComponent'>
+        <h3>Ejercicio 2</h3>
         <Coches />
       </div>
     </div>
